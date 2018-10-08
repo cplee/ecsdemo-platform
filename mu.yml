@@ -1,6 +1,6 @@
 ---
 environments:
   - name: acceptance
-    provider: ecs-fargate
+    provider: eks
   - name: production
-    provider: ecs-fargate
+    provider: eks

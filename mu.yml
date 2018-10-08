@@ -2,5 +2,16 @@
 environments:
   - name: acceptance
     provider: eks
+    cluster:
+      desiredCapacity: 3
   - name: production
     provider: eks
+    cluster:
+      desiredCapacity: 3
+
+rbac:
+  - role: deploy
+    services:
+    - ecsdemo-frontend
+    - ecsdemo-crystal
+    - ecsdemo-nodejs
